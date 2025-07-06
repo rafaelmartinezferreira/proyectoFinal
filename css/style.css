@@ -1,0 +1,285 @@
+/* Estilos aplicados a todo el sitio */
+/* --------------------------------- */
+
+/* Cuerpo de página */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  padding-bottom: 40px;
+}
+
+/* Pie de página */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3371ff;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px 0;
+}
+
+/* Menú */
+nav {
+  background-color: #3371ff;
+  top: 0;
+  z-index: 1000;  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+nav ul li a.activo {
+  background-color: #2254c6;
+}
+
+/* Propiedades predeterminadas de Video */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Página principal - index.html */
+/* --------------------------------- */
+.banner{
+  margin: 0;
+  padding: 0;
+}
+
+.texto-bienvenida{
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.texto-destacado{
+  font-weight: bold;
+  color: #163989;  
+}
+
+
+/* Página galeria.html */
+/* --------------------------------- */
+
+/* Página galeria.html: Secciones */
+#seccion_recursos{
+  margin-top: 2em;
+  margin-bottom: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center; 
+}
+
+/* Página galeria.html: Contenedor principal */
+.galeria {
+  padding-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Página galeria.html: Tarjetas para presentar experiencias */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.1em;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.card-footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Página sobre_nosotros.html */
+/* --------------------------------- */
+
+/* Página sobre_nosotros.html: Secciones */
+#seccion_nosotros{
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  color: #3d3d3d; 
+}
+
+#seccion_nosotros_mapa{
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+#seccion_nosotros_general{
+  text-align: center;
+  padding-bottom: 2em;
+  color: #163989; 
+}
+
+/* Página sobre_nosotros.html: Logo */
+.imagen_logo{
+  max-width: 10em;
+}
+
+/* Página sobre_nosotros.html: Lista forma de comunicación */
+.lista_comunicacion li{
+  list-style: none;
+  padding-left: 0
+}
+
+/* Página sobre_nosotros.html: Modifico interlineado de título y subtítulo */
+.titulo{
+  margin-bottom: 0;
+}
+.subtitulo{
+  margin-top: 0;
+}
+
+.texto-autor{
+  max-width: 30em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Página sobre_nosotros.html: Imágenes con hipervínculo para ir a los recursos utilizados en el proyecto */
+.img_recurso{
+  height: 3em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img_recurso:hover{
+  transform: scale(1.05); /* Aumenta un 5% el tamaño */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Página contacto.html */
+/* --------------------------------- */
+
+/* Página contacto.html y sobre_nosotros.html: Secciones */
+#seccion_contacto{
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  color: #3d3d3d; 
+}
+
+/* Página contacto.html y sobre_nosotros.html: Imagen */
+.imagen_contacto{
+  max-width: 16em;
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra exterior */
+  filter: blur(0.5px); /* Suave efecto esfumado */
+  transition: all 0.3s ease-in-out;  
+}
+
+/* Página contacto.html: Formulario de Contacto */
+.formulario {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.formulario button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}

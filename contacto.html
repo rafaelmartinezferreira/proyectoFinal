@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadatos esenciales del sitio -->
+	<meta charset="utf-8"> <!-- Codificación de caracteres (UTF-8) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Diseño responsive -->
+	<meta name="description" content="Maqueta de sitio - Proyecto en el marco del curso de Ciencias de la Computación, Módulo 3 - Año 2025"> <!-- Posicionamiento en Google -->
+	<meta name="author" content="Rafael Martínez"> <!-- Autor -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet"> <!-- Tipografía desde Google Fonts -->
+	<link rel="icon" href="imagenes/favicon.ico" type="image/x-icon"> <!-- Icono en la pestaña del navegador -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Hoja de estilos externa -->
+	<title>Compartiendo</title> <!-- Título en la pestaña del navegador -->
+</head>
+<body>
+	<!-- Encabezado de página -->
+	<header>
+		<!-- Menú del sitio -->
+		<nav>
+			<ul>
+				<li><a href="index.html"><img src="imagenes/home.png" width="16px" alt="logo Liceo 8"></a></li>
+				<li><a href="galeria.html">Galería</a></li>
+				<li><a href="sobre_nosotros.html">Nosotros</a></li>
+				<li><a href="#" class="activo">Contacto</a></li>
+			</ul>			
+		</nav>		
+	</header> 
+
+	<!-- Contenido de la página Contacto -->
+	<main>
+		<!-- Imagen decorativa y Texto presentación -->
+		<section id="seccion_contacto">
+			<img src="imagenes/contacto.jpeg" alt="contacto_logo" class="imagen_contacto">
+			<p>Estamos convencidos en que compartir experiencias educativas enriquece a toda la comunidad.</p>
+			<p>Si estás desarrollando proyectos innovadores, talleres, nuevas actividades u otras formas creativas de enseñar, nos encantaría conocer tu trabajo.</p>
+			<p>Al contactarte podés contribuir al intercambio de ideas, fortalecer redes y construir juntos nuevas oportunidades de aprendizaje.</p>
+			<h3>¡Tu experiencia será inspiradora para otros!</h3>
+		</section>
+
+		<!-- Formulario de contacto -->
+		<section>
+			<div class="formulario">
+			  <h2>Formulario de Contacto</h2>
+			  <form action="muchas_gracias.html" method="post">
+			    <label for="nombre">Nombre</label>
+			    <input type="text" id="nombre" name="nombre" required>
+
+			    <label for="email">Correo electrónico</label>
+			    <input type="email" id="email" name="email" required>
+
+			    <label for="tema">Cuéntanos sobre tu trabajo</label>
+			    <textarea id="tema" name="tema" rows="5" required></textarea>
+
+			    <label for="tema">Opcional</label>
+			    <input type="file" id="adjunto" name="adjunto">
+
+			    <button type="submit">Enviar</button>
+			  </form>
+			</div>
+		</section>
+	</main>
+
+	<!-- Pie de página -->
+	<footer>
+		&copy; Rafael Martínez - Ciencias de la Computación - Módulo 3 - Año 2025
+		<div id="fechaHora"></div>
+	</footer>
+</body>
+<script src="js/script.js"></script>
+</html>

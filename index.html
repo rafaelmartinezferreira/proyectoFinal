@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadatos esenciales del sitio -->
+	<meta charset="utf-8"> <!-- Codificación de caracteres (UTF-8) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Diseño responsive -->
+	<meta name="description" content="Maqueta de sitio - Proyecto en el marco del curso de Ciencias de la Computación, Módulo 3 - Año 2025"> <!-- Posicionamiento en Google -->
+	<meta name="author" content="Rafael Martínez"> <!-- Autor -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet"> <!-- Tipografía desde Google Fonts -->
+	<link rel="icon" href="imagenes/favicon.ico" type="image/x-icon"> <!-- Icono en la pestaña del navegador -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Hoja de estilos externa -->
+	<title>Compartiendo</title> <!-- Título en la pestaña del navegador -->
+</head>
+<body>
+	<!-- Encabezado de página -->
+	<header>
+		<!-- Menú del sitio -->
+		<nav>
+			<ul>
+				<li><a href="#" class="activo"><img src="imagenes/home.png" width="16px" alt="logo Liceo 8"></a></li>
+				<li><a href="galeria.html">Galería</a></li>
+				<li><a href="sobre_nosotros.html">Nosotros</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>			
+		</nav>		
+	</header> 
+
+	<!-- Contenido de la página Principal -->
+	<main>
+		<div class="banner">
+			<!-- En el siguiente video se omiten los controles para que funcione como elemento de diseño sin intervención del usuario -->
+			<video autoplay loop muted playsinline poster="imagenes/frente_arte.png">
+				<source src="multimedia/bienvenidos.mp4" type="video/mp4">
+				Tu navegador no soporta la reproducción del video.
+			</video>
+		</div>
+		<div class="texto-bienvenida">
+			<h3>Liceo Instrucciones del Año XIII</h3>
+			<p>Este sitio es un lugar de encuentro y expresión creado para compartir proyectos, ideas y trabajos.</p>
+			<p>Aquí encontrarás producciones que reflejan el esfuerzo, la creatividad y el compromiso de estudiantes y docentes.</p>			
+			<p class="texto-destacado">¡¡¡ Te invitamos a ser parte !!!</p>
+			<p>Sólo tienes que completar nuestro formulario de contacto y nos estaremos comunicando.</p>
+		</div>
+	</main>
+
+	<!-- Pie de página -->
+	<footer>
+		&copy; Rafael Martínez - Ciencias de la Computación - Módulo 3 - Año 2025
+		<div id="fechaHora"></div>
+	</footer>
+</body>
+<script src="js/script.js"></script> <!-- JavaScript externo -->
+</html>

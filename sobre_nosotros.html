@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadatos esenciales del sitio -->
+	<meta charset="utf-8"> <!-- Codificación de caracteres (UTF-8) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Diseño responsive -->
+	<meta name="description" content="Maqueta de sitio - Proyecto en el marco del curso de Ciencias de la Computación, Módulo 3 - Año 2025"> <!-- Posicionamiento en Google -->
+	<meta name="author" content="Rafael Martínez"> <!-- Autor -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet"> <!-- Tipografía desde Google Fonts -->
+	<link rel="icon" href="imagenes/favicon.ico" type="image/x-icon"> <!-- Icono en la pestaña del navegador -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Hoja de estilos externa -->
+	<title>Compartiendo</title> <!-- Título en la pestaña del navegador -->
+</head>
+<body>
+	<!-- Encabezado de página -->
+	<header>
+		<!-- Menú del sitio -->
+		<nav>
+			<ul>
+				<li><a href="index.html"><img src="imagenes/home.png" width="16px" alt="logo Liceo 8"></a></li>
+				<li><a href="galeria.html">Galería</a></li>
+				<li><a href="#" class="activo">Nosotros</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>			
+		</nav>	
+	</header> 
+
+	<!-- Contenido de la página Sobre Nosotros -->
+	<main>
+		<section id="seccion_nosotros">
+			<img src="imagenes/logo_l8.png" alt="logo_l8" class="imagen_logo">
+			<h1 class="titulo">Liceo Nro.8 Instrucciones del Año XIII</h1>
+			<h4 class="subtitulo">Montevideo</h4>
+			<p>El Liceo Nro.8 de Montevideo fue fundado en julio de 1942 por <i>Rodolfo Usera Bermúdez, Prof. Ángel María Luna, Nelly Labaure, Lidia Nichellie y Nelson Gambogi</i></p>
+			<p>Se ubica en la <a href="#seccion_nosotros_mapa">Av. 8 de Octubre 2619</a>, en el corazón del barrio Tres Cruces.</p>
+			<p>Actualmente, brinda formación a cerca de 800 estudiantes en turnos matutino, vespertino y nocturno, con un sólido equipo docente y personal comprometido con la Educación Pública de calidad.</p>
+			<p>La institución apuesta por una enseñanza inclusiva, adaptada a las necesidades de sus estudiantes, promueve además la participación en proyectos comunitarios y programas nacionales fortaleciendo su vínculo con el entorno y fomentando experiencias de aprendizaje significativas.</p>
+			<div class="lista_comunicacion">
+				<ul>
+					<li><strong>Vías de comunicación: </strong></li>
+					<li><img src="imagenes/telefono.jpg" height="20px" alt="logo_telefono"></li>
+					<li>2487 7804</li>
+					<li>2481 2596</li>
+					<li>2487 1154</li>
+					<li><img src="imagenes/sobre.jpg" height="20px" alt="logo_mail"></li>
+					<li><i>diurno:</i> liceonum8@gmail.com</li>
+					<li><i>nocturno:</i> liceonum8.nocturno@gmail.com</li>
+					<li><i>poites:</i> liceonum8.poites@gmail.com</li>					
+				</ul>
+			</div>
+		</section>
+		<section id="seccion_nosotros_mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.6360210710345!2d-56.16418807450975!3d-34.89048517269913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f805663d72a1f%3A0x6dae37fe91ee2b74!2sLiceo%20N%C2%B08%20Instrucciones%20del%20a%C3%B1o%20XIII%2C%20Av.%208%20de%20Octubre%202615%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1751561885576!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>			
+		</section>
+		<!-- Sección con información general -->
+		<section id="seccion_nosotros_general">
+			<hr>
+			<h2>Sobre el sito</h2>
+			<p class="texto-autor">Este diseño fue realizado con el objetivo de aplicar los conocimientos adquiridos sobre HTML y CSS en el <strong>Curso de desarrollo profesional docente - Profesores Informática EBI 2024 - Módulo 3 - Versión 1 - Edición 1: Aula: 1.</strong></p>
+			<p><a href="https://www.ceibal.edu.uy" target="_blank"><img class="img_recurso" src="imagenes/logo_cc.png" alt="Logo_Curso"></a></p>
+
+			<p class="texto-autor">Se trata de una maqueta general que en caso de implementarse, requeriría la participación y validación de los distintos actores institucionales involucrados.</p>
+			<h4>Recursos empleados:</h4>
+			<p><a href="https://www.canva.com/es_es/" target="_blank"><img class="img_recurso" src="imagenes/logo_canva.png" alt="Logo_Canva"></a></p>
+			<p><a href="https://chatgpt.com/" target="_blank"><img class="img_recurso" src="imagenes/logo_chatgpt.png" alt="Logo_ChatGPT"></a></p>
+			<p><a href="https://www.fotor.com/" target="_blank"><img class="img_recurso" src="imagenes/logo_fotor.png" alt="Logo_Fotor"></a></p>
+			<p><a href="https://designer.microsoft.com/image-creator" target="_blank"><img class="img_recurso" src="imagenes/logo_designer.png" alt="Logo_Designer"></a></p>
+		</section>		
+	</main>
+
+	<!-- Pie de página -->
+	<footer>
+		&copy; Rafael Martínez - Ciencias de la Computación - Módulo 3 - Año 2025
+		<div id="fechaHora"></div>
+	</footer>
+</body>
+<script src="js/script.js"></script>
+</html>
